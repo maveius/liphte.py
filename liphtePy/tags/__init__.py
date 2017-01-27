@@ -1,10 +1,10 @@
 from copy import copy, deepcopy
 from string import Template as sTemplate
 
-from breve.util import Namespace, escape, quoteattrs, caller
-from breve.flatten import flatten, register_flattener
+from liphtePy.util import Namespace, escape, quoteattrs, caller
+from liphtePy.flatten import flatten, register_flattener
 # noinspection PyProtectedMember
-from breve.tags import _conditionals as C
+from liphtePy.tags import _conditionals as C
 
 conditionals = dict([
     (k, v) for k, v in C.__dict__.items()

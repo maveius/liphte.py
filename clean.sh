@@ -1,5 +1,5 @@
 #!/bin/bash
 
-rm -rf Breve.egg-info dist build
+rm -rf liphtePy.egg-info dist build
 find . -name "*.pyc" -exec rm {} \;
 find . -name "*~" -exec rm {} \;

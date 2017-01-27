@@ -6,14 +6,15 @@ import unittest
 if __name__ == '__main__':
     # force import from source directory rather than site-packages
     sys.path.insert(0, os.path.abspath('../..'))
-from breve.tags import Tag, AutoTag
-from breve.tags.html import tags
+from liphtePy.tags import Tag, AutoTag
+from liphtePy.tags.html import tags
 # noinspection PyPep8Naming
-from breve.tags.entities import entities as E
-from breve.tags import macro, assign, xml, test, let
-from breve.flatten import flatten
-from breve.util import Namespace
-from breve.tests.lib import my_name
+from liphtePy.tags.entities import entities as E
+from liphtePy.tags import macro, assign, xml, test, let
+from liphtePy.flatten import flatten
+from liphtePy.util import Namespace
+from liphtePy.tests.lib import my_name
+
 
 # noinspection PyPep8Naming
 class SerializationTestCase(unittest.TestCase):
@@ -173,7 +174,7 @@ class SerializationTestCase(unittest.TestCase):
             T.body[
                 T.ul[
                     T.li[T.a(href="$url")["$label"]] * url_data
-                ]
+                    ]
             ]
         ]
         output = flatten(template)
@@ -299,7 +300,7 @@ class MacrosTestCase(unittest.TestCase):
                 T.body[
                     T.ul[
                         T.li(class_="$class")[test_macro("$url")] * url_data
-                    ]
+                        ]
                 ]
             ]
         )
@@ -421,7 +422,7 @@ class DOMTestCase(unittest.TestCase):
                 T.head[T.title['macro madness']],
                 T.body[extract_css(
                     T.div(class_='text', id='main-content')[
-                        T.img(src='/images/breve-logo.png', alt='breve logo'),
+                        T.img(src='/images/liphtePy-logo.png', alt='liphtePy logo'),
                         T.br,
                         T.span(class_='bold')['''Hello from Breve!''']
                     ]
@@ -438,7 +439,7 @@ class DOMTestCase(unittest.TestCase):
             output,
             (u'<html><head><title>macro madness</title></head>'
              u'<body><div class="text" id="main-content">'
-             u'<img src="/images/breve-logo.png" alt="breve logo"></img>'
+             u'<img src="/images/liphtePy-logo.png" alt="liphtePy logo"></img>'
              u'<br /><span class="bold">Hello from Breve!</span></div>'
              u'<pre>div.text { }\ndiv#main-content { }\nspan.bold { }</pre>'
              u'</body></html>')
@@ -449,7 +450,7 @@ class CustomTagsTestCase(unittest.TestCase):
     def test_custom_tags(self):
         """custom tags"""
 
-        from breve.tests.sitemap import tags, xmlns
+        from liphtePy.tests.sitemap import tags, xmlns
 
         # noinspection PyPep8Naming
         T = Namespace(tags)

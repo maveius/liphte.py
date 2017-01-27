@@ -1,7 +1,7 @@
-from breve.util import quoteattrs
-from breve.flatten import register_flattener
-from breve.tags import Tag, Namespace
-from breve.tags.html import empty_tag_names, HtmlProto, tags as htmltags
+from liphtePy.util import quoteattrs
+from liphtePy.flatten import register_flattener
+from liphtePy.tags import Tag, Namespace
+from liphtePy.tags.html import empty_tag_names, HtmlProto, tags as htmltags
 
 xmlns = None
 xml_encoding = None

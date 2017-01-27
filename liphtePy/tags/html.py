@@ -1,6 +1,6 @@
-from breve.flatten import flatten, register_flattener
-from breve.tags import Proto, Tag, Namespace, cdata, xml, flatten_tag, flatten_proto, custom_tag
-from breve.tags.jsmin import jsmin
+from liphtePy.flatten import flatten, register_flattener
+from liphtePy.tags import Proto, Tag, Namespace, cdata, xml, flatten_tag, flatten_proto, custom_tag
+from liphtePy.tags.jsmin import jsmin
 
 xmlns = "http://www.w3.org/1999/xhtml"
 doctype = '''<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"

@@ -1,5 +1,5 @@
-from breve.flatten import register_flattener
-from breve.util import Namespace
+from liphtePy.flatten import register_flattener
+from liphtePy.util import Namespace
 
 
 class Entity(str):

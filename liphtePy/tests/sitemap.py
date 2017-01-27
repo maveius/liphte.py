@@ -1,6 +1,6 @@
 # sitemap.py - example custom tag definition file
 
-from breve.tags import Proto
+from liphtePy.tags import Proto
 
 xmlns = "http://www.google.com/schemas/sitemap/0.84/sitemap.xsd"
 doctype = ""

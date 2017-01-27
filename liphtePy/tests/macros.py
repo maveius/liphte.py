@@ -8,10 +8,10 @@ if __name__ == '__main__':
     # force import from source directory rather than site-packages
     sys.path.insert(0, os.path.abspath('../..'))
 
-from breve.tags.html import tags as T
-from breve.tags import macro, assign
-from breve.flatten import flatten
-from breve.tests.lib import my_name
+from liphtePy.tags.html import tags as T
+from liphtePy.tags import macro, assign
+from liphtePy.flatten import flatten
+from liphtePy.tests.lib import my_name
 
 
 # noinspection PyUnresolvedReferences

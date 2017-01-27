@@ -1,5 +1,5 @@
 *.pyc
 *.pyo
-Breve.egg-info/
+LiphtePy.egg-info/
 dist/
 .idea

@@ -3,7 +3,7 @@ import unittest
 
 # noinspection PyUnresolvedReferences
 def testsuite():
-    from breve.tests import tags, macros
+    from liphtePy.tests import tags, macros
 
     suite = unittest.TestSuite()
     suite.addTest(tags.suite())
