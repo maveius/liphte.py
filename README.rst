@@ -1,4 +1,4 @@
-LiphtePY is a fork of Python template engine called Breve that is designed to be clean and elegant with minimal syntax. LiphtePY was heavily inspired by rudykocur.
+LiphtePY is a fork of Python template engine called Breve that is designed to be clean and elegant with minimal syntax. LiphtePY was heavily inspired by rudykocur/breve.
 
 A short example::
 
